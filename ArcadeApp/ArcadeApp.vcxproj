@@ -17,7 +17,6 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -53,27 +52,28 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared" >
+  <ImportGroup Label="Shared">
   </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\ExtraLIb\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\ExtraLIb\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -112,6 +112,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,8 +131,95 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App\App.cpp" />
+    <ClCompile Include="App\Button.cpp" />
+    <ClCompile Include="ArcadeApp.cpp" />
+    <ClCompile Include="Games\BreakOut\Ball.cpp" />
+    <ClCompile Include="Games\BreakOut\Block.cpp" />
+    <ClCompile Include="Games\BreakOut\BreakOut.cpp" />
+    <ClCompile Include="Games\BreakOut\BreakoutGameLevel.cpp" />
+    <ClCompile Include="Games\BreakOut\Excluder.cpp" />
+    <ClCompile Include="Games\BreakOut\LevelBoundary.cpp" />
+    <ClCompile Include="Games\BreakOut\Paddle.cpp" />
+    <ClCompile Include="Games\Pacman\Actor.cpp" />
+    <ClCompile Include="Games\Pacman\Ghost.cpp" />
+    <ClCompile Include="Games\Pacman\GhostAI.cpp" />
+    <ClCompile Include="Games\Pacman\Pacman.cpp" />
+    <ClCompile Include="Games\Pacman\PacmanGame.cpp" />
+    <ClCompile Include="Games\Pacman\PacmanGameUtils.cpp" />
+    <ClCompile Include="Games\Pacman\PacmanLevel.cpp" />
+    <ClCompile Include="Graphics\AnimatedSprite.cpp" />
+    <ClCompile Include="Graphics\Animation.cpp" />
+    <ClCompile Include="Graphics\AnimationPlayer.cpp" />
+    <ClCompile Include="Graphics\BitmapFont.cpp" />
+    <ClCompile Include="Graphics\BMPImage.cpp" />
+    <ClCompile Include="Graphics\Color.cpp" />
+    <ClCompile Include="Graphics\Screen.cpp" />
+    <ClCompile Include="Graphics\ScreenBuffer.cpp" />
+    <ClCompile Include="Graphics\SpriteSheet.cpp" />
+    <ClCompile Include="Input\GameController.cpp" />
+    <ClCompile Include="Input\InputController.cpp" />
+    <ClCompile Include="Scenes\ArcadeScene.cpp" />
+    <ClCompile Include="Scenes\ButtonOptionsScene.cpp" />
+    <ClCompile Include="Scenes\GameScene.cpp" />
+    <ClCompile Include="Scenes\NotImplementedScene.cpp" />
+    <ClCompile Include="Scenes\Pacman\PacmanStartScene.cpp" />
+    <ClCompile Include="Shapes\AARectangle.cpp" />
+    <ClCompile Include="Shapes\Circle.cpp" />
+    <ClCompile Include="Shapes\Line2D.cpp" />
+    <ClCompile Include="Shapes\Shape.cpp" />
+    <ClCompile Include="Shapes\Triangle.cpp" />
+    <ClCompile Include="Utils\FileCommandLoader.cpp" />
+    <ClCompile Include="Utils\Utils.cpp" />
+    <ClCompile Include="Utils\Vec2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App\App.h" />
+    <ClInclude Include="App\Button.h" />
+    <ClInclude Include="Games\BreakOut\Ball.h" />
+    <ClInclude Include="Games\BreakOut\Block.h" />
+    <ClInclude Include="Games\BreakOut\BoundaryEdge.h" />
+    <ClInclude Include="Games\BreakOut\BreakOut.h" />
+    <ClInclude Include="Games\BreakOut\BreakoutGameLevel.h" />
+    <ClInclude Include="Games\BreakOut\Excluder.h" />
+    <ClInclude Include="Games\BreakOut\LevelBoundary.h" />
+    <ClInclude Include="Games\BreakOut\Paddle.h" />
+    <ClInclude Include="Games\Game.h" />
+    <ClInclude Include="Games\Pacman\Actor.h" />
+    <ClInclude Include="Games\Pacman\Ghost.h" />
+    <ClInclude Include="Games\Pacman\GhostAI.h" />
+    <ClInclude Include="Games\Pacman\Pacman.h" />
+    <ClInclude Include="Games\Pacman\PacmanGame.h" />
+    <ClInclude Include="Games\Pacman\PacmanGameUtils.h" />
+    <ClInclude Include="Games\Pacman\PacmanLevel.h" />
+    <ClInclude Include="Graphics\AnimatedSprite.h" />
+    <ClInclude Include="Graphics\Animation.h" />
+    <ClInclude Include="Graphics\AnimationPlayer.h" />
+    <ClInclude Include="Graphics\BitmapFont.h" />
+    <ClInclude Include="Graphics\BMPImage.h" />
+    <ClInclude Include="Graphics\Color.h" />
+    <ClInclude Include="Graphics\Screen.h" />
+    <ClInclude Include="Graphics\ScreenBuffer.h" />
+    <ClInclude Include="Graphics\SpriteSheet.h" />
+    <ClInclude Include="Input\GameController.h" />
+    <ClInclude Include="Input\InputAction.h" />
+    <ClInclude Include="Input\InputController.h" />
+    <ClInclude Include="Scenes\ArcadeScene.h" />
+    <ClInclude Include="Scenes\ButtonOptionsScene.h" />
+    <ClInclude Include="Scenes\GameScene.h" />
+    <ClInclude Include="Scenes\NotImplementedScene.h" />
+    <ClInclude Include="Scenes\Pacman\PacmanStartScene.h" />
+    <ClInclude Include="Scenes\Scene.h" />
+    <ClInclude Include="Shapes\AARectangle.h" />
+    <ClInclude Include="Shapes\Circle.h" />
+    <ClInclude Include="Shapes\Line2D.h" />
+    <ClInclude Include="Shapes\Shape.h" />
+    <ClInclude Include="Shapes\Triangle.h" />
+    <ClInclude Include="Utils\FileCommandLoader.h" />
+    <ClInclude Include="Utils\Utils.h" />
+    <ClInclude Include="Utils\Vec2D.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

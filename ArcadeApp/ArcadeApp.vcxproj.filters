@@ -13,5 +13,324 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{6faf129b-2393-4ba4-a2d0-0c101faa38c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{478d4d27-cb78-40c4-aef8-5330d4eb712f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Games">
+      <UniqueIdentifier>{7045f6b9-3048-4286-a92c-967f33372273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Games\Pacman">
+      <UniqueIdentifier>{d71130b3-3585-4bba-9f17-7e724ab738ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games">
+      <UniqueIdentifier>{7964c534-4dd9-4848-aa55-9bef18c04b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\Pacman">
+      <UniqueIdentifier>{66beb3ba-c007-42f9-965c-9146636425ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\BreakOut">
+      <UniqueIdentifier>{d49b9653-24a9-41b0-abd2-b0189a968c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Games\BreakOut">
+      <UniqueIdentifier>{47d31d3a-434c-4510-9940-14cb6a8900c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{d104f2bd-f6a5-41b8-bc0b-6af81cb1cdff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{e171b119-3ce0-4ed6-bd2d-a2caef663323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{fd632bb0-3a5f-4604-adab-66e89f80615c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{31121755-80b7-40ed-91d2-cb34331d18c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{23ca1f5e-51ec-4289-a2ef-639afccf3f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes\Pacman">
+      <UniqueIdentifier>{69bda4e0-2208-4f87-9851-4904ff0acc83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scenes">
+      <UniqueIdentifier>{825298bb-7c5d-417c-91f9-3e01ebfe4e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scenes\Pacman">
+      <UniqueIdentifier>{f29bf66e-b60e-45f1-932b-47102cadf466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shapes">
+      <UniqueIdentifier>{a02c70a4-11f8-4f03-9a47-ea6f86f34a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shapes">
+      <UniqueIdentifier>{4a2ef8ac-21cb-4091-b315-9ed20f68c547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{9fa497de-b9ed-4d9c-8e33-6e15ac63e86a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{ececcaca-2a82-4ea1-b065-20b34e0c45a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App\App.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="App\Button.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcadeApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\Pacman\Actor.cpp">
+      <Filter>Source Files\Games\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\Pacman\Ghost.cpp">
+      <Filter>Source Files\Games\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\Pacman\GhostAI.cpp">
+      <Filter>Source Files\Games\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\Pacman\Pacman.cpp">
+      <Filter>Source Files\Games\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\Pacman\PacmanGame.cpp">
+      <Filter>Source Files\Games\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\Pacman\PacmanGameUtils.cpp">
+      <Filter>Source Files\Games\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\Pacman\PacmanLevel.cpp">
+      <Filter>Source Files\Games\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\BreakOut\Ball.cpp">
+      <Filter>Source Files\Games\BreakOut</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\BreakOut\Block.cpp">
+      <Filter>Source Files\Games\BreakOut</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\BreakOut\BreakOut.cpp">
+      <Filter>Source Files\Games\BreakOut</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\BreakOut\BreakoutGameLevel.cpp">
+      <Filter>Source Files\Games\BreakOut</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\BreakOut\Excluder.cpp">
+      <Filter>Source Files\Games\BreakOut</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\BreakOut\LevelBoundary.cpp">
+      <Filter>Source Files\Games\BreakOut</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\BreakOut\Paddle.cpp">
+      <Filter>Source Files\Games\BreakOut</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\AnimatedSprite.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Animation.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\AnimationPlayer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\BitmapFont.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\BMPImage.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Color.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Screen.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ScreenBuffer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\SpriteSheet.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\GameController.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputController.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\ArcadeScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\ButtonOptionsScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\GameScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\NotImplementedScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Pacman\PacmanStartScene.cpp">
+      <Filter>Source Files\Scenes\Pacman</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes\AARectangle.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes\Circle.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes\Line2D.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes\Shape.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes\Triangle.cpp">
+      <Filter>Source Files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\FileCommandLoader.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Vec2D.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App\App.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="App\Button.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Pacman\Actor.h">
+      <Filter>Header Files\Games\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Pacman\Ghost.h">
+      <Filter>Header Files\Games\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Pacman\GhostAI.h">
+      <Filter>Header Files\Games\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Pacman\Pacman.h">
+      <Filter>Header Files\Games\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Pacman\PacmanGame.h">
+      <Filter>Header Files\Games\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Pacman\PacmanGameUtils.h">
+      <Filter>Header Files\Games\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Pacman\PacmanLevel.h">
+      <Filter>Header Files\Games\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\BreakOut\Ball.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\BreakOut\Block.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\BreakOut\BoundaryEdge.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\BreakOut\BreakOut.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\BreakOut\BreakoutGameLevel.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\BreakOut\Excluder.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\BreakOut\LevelBoundary.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\BreakOut\Paddle.h">
+      <Filter>Header Files\Games\BreakOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Game.h">
+      <Filter>Header Files\Games</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\AnimatedSprite.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Animation.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\AnimationPlayer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\BitmapFont.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\BMPImage.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Color.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Screen.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ScreenBuffer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\SpriteSheet.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\GameController.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputAction.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputController.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Pacman\PacmanStartScene.h">
+      <Filter>Header Files\Scenes\Pacman</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\ArcadeScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\ButtonOptionsScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\GameScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\NotImplementedScene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Scene.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes\AARectangle.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes\Circle.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes\Line2D.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes\Shape.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes\Triangle.h">
+      <Filter>Header Files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\FileCommandLoader.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Vec2D.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
